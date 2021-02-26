@@ -24,12 +24,12 @@ npx gatsby new gatsby-ready-to-go https://github.com/Pagepro/gatsby-ready-to-go
 
 If you prefer you can clone this repository and run the following commands inside the project folder:
 
-1. `npm install` or `yarn`;
-2. `yarn start`;
+1. `npm install` or `yarn`
+2. `yarn start`
 
 To view the project you can open `http://localhost:8000`.
 
-## Other Available Scripts
+## Other available scripts
 
 `yarn storybook`
 

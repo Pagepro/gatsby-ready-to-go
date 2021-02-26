@@ -1,0 +1,23 @@
+import React from 'react';
+import { Story, Meta } from '@storybook/react/types-6-0';
+
+import {{ properCase name }} from '.';
+import { {{ properCase name }}Props } from './types';
+
+const {{ camelCase name }}StoriesMeta: Meta = {
+  title: 'Molecules/{{ properCase name }}',
+  component: {{ properCase name }},
+  argTypes: {
+    children: {
+      name: 'Content',
+      control: {
+        type: 'text',
+      },
+      defaultValue: 'Put any content inside',
+    },
+  },
+};
+
+export default {{ camelCase name }}StoriesMeta;
+
+export const Base: Story<{{ properCase name }}Props> = (args) => <{{ properCase name }} {...args} />;
