@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { PageProps } from 'gatsby';
-import { Container } from 'theme-ui';
+import { Box, Container } from 'theme-ui';
 
 import Inner from 'components/styles/Inner';
 import SEO from 'components/SEO';
-import Layout from 'components/Layout';
 
 const IndexPage: React.FC<PageProps> = () => (
-  <Layout>
+  <Fragment>
     <SEO />
     <Container>
-      <Inner>{/* Put any content here */}</Inner>
+      <Inner>
+        <Box paddingY="1rem">
+          Made with ♥ by{' '}
+          <a href="https://pagepro.co/" target="_blank" rel="noreferrer">
+            Pagepro
+          </a>
+        </Box>
+      </Inner>
     </Container>
-  </Layout>
+  </Fragment>
 );
 
 export default IndexPage;

@@ -16,7 +16,11 @@ const GlobalStyles: React.FC = () => (
         cursor: 'pointer',
       },
       a: {
+        color: theme.colors.red,
         textDecoration: 'none',
+        '&:hover': {
+          textDecoration: 'underline',
+        },
       },
       svg: {
         fill: 'currentColor',

@@ -8,11 +8,9 @@ Everything you need to create an amazing Gatsby project.
 - **Typescript**
 - **Theme UI and Emotion**
 - **Storybook**
-- **Plop.js**
+- **Plop.js** - a little tool to generate files based on template.
 - **gitlab-ci.yml file**
 - **Prettier and ESLint**
-
-This starter includes React v16 to compatibility with Emotion. More info [here](https://github.com/emotion-js/emotion/pull/1970).
 
 ## Getting started
 

@@ -2,7 +2,7 @@ export default {
   color: 'red',
   backgroundColor: 'white',
   paddingY: 'default',
-  height: '100vh',
+  height: 'calc(100vh - 3.5rem)',
   alignItems: 'center',
   content: {
     alignItems: 'center',
@@ -21,8 +21,5 @@ export default {
     svg: {
       fontSize: ['2rem', '4rem', '6rem'],
     },
-  },
-  title: {
-    textTransform: 'uppercase',
   },
 };

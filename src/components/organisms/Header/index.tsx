@@ -1,9 +1,11 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
 import { jsx, Text, Box, Flex } from 'theme-ui';
 
 import { IconHello } from 'assets/svg';
 import Inner from 'components/styles/Inner';
 import { HeaderProps } from './types';
+import { StyledHeaderTitle } from './styles';
 
 const Header: React.FC<HeaderProps> = ({ title, description }) => (
   <Flex as="header" variant="header">
@@ -13,9 +15,9 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => (
           <IconHello />
         </Flex>
         <Box>
-          <Text as="h1" variant="heading1" sx={{ variant: 'header.title' }}>
+          <StyledHeaderTitle as="h1" variant="heading1">
             {title}
-          </Text>
+          </StyledHeaderTitle>
           {description && (
             <Text as="p" variant="text">
               {description}

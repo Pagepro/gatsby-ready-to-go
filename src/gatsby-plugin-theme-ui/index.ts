@@ -21,7 +21,7 @@ const theme = {
     regular: 400,
     bold: 600,
   },
-  breakpoints: ['768px', '1024px', '1440px'],
+  breakpoints: ['48rem', '64rem', '90rem'],
   space: {
     default: '1.25rem',
   },

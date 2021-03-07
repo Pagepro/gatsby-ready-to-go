@@ -1,5 +1,6 @@
+/** @jsxRuntime classic */
 /** @jsx jsx */
-import { jsx, Text } from 'theme-ui';
+import { jsx, Box, Text, Flex } from 'theme-ui';
 import { Meta } from '@storybook/react/types-6-0';
 
 import { baseIcons } from './consts';
@@ -18,24 +19,22 @@ const iconsStoriesMeta: Meta = {
 export default iconsStoriesMeta;
 
 export const Base: React.FC<IconsDemoProps> = ({ items }) => (
-  <div
+  <Flex
     sx={{
-      display: 'flex',
       flexWrap: 'wrap',
       alignItems: 'center',
     }}
   >
     {items.map(({ name, icon: Icon }) => (
-      <div
+      <Box
+        m="1rem"
         sx={{
-          margin: '1rem',
           textAlign: 'center',
         }}
         key={name}
       >
-        <div
+        <Flex
           sx={{
-            display: 'flex',
             width: '6.25rem',
             height: '4rem',
             border: '1px solid #eee',
@@ -46,9 +45,9 @@ export const Base: React.FC<IconsDemoProps> = ({ items }) => (
           }}
         >
           <Icon />
-        </div>
+        </Flex>
         <Text sx={{ fontSize: '0.75rem' }}>{name}</Text>
-      </div>
+      </Box>
     ))}
-  </div>
+  </Flex>
 );

@@ -22,7 +22,8 @@ module.exports = (plop) => {
       {
         type: 'add',
         path: 'src/components/atoms/{{name}}/index.stories.tsx',
-        templateFile: 'plop-templates/Atoms.stories.tsx.hbs',
+        templateFile: 'plop-templates/Component.stories.tsx.hbs',
+        data: { directory: 'Atoms' },
       },
       {
         type: 'add',
@@ -54,7 +55,8 @@ module.exports = (plop) => {
       {
         type: 'add',
         path: 'src/components/molecules/{{name}}/index.stories.tsx',
-        templateFile: 'plop-templates/Molecules.stories.tsx.hbs',
+        templateFile: 'plop-templates/Component.stories.tsx.hbs',
+        data: { directory: 'Molecules' },
       },
       {
         type: 'add',
@@ -86,7 +88,8 @@ module.exports = (plop) => {
       {
         type: 'add',
         path: 'src/components/organisms/{{name}}/index.stories.tsx',
-        templateFile: 'plop-templates/Organisms.stories.tsx.hbs',
+        templateFile: 'plop-templates/Component.stories.tsx.hbs',
+        data: { directory: 'Organisms' },
       },
       {
         type: 'add',

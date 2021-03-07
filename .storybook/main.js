@@ -4,6 +4,9 @@ module.exports = {
     '@storybook/addon-links',
     {
       name: '@storybook/addon-essentials',
+      options: {
+        docs: false,
+      },
     },
   ],
 };
