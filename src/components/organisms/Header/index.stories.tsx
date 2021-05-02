@@ -7,6 +7,9 @@ import { HeaderProps } from './types';
 const headerStoriesMeta: Meta = {
   title: 'Organisms/Header',
   component: Header,
+  parameters: {
+    layout: 'fullscreen',
+  },
   argTypes: {
     title: {
       name: 'Title',

@@ -12,3 +12,10 @@ declare module '*.svg' {
 
   export default ReactComponent;
 }
+
+declare module '@emotion/react' {
+  import { Theme as AppTheme } from '../gatsby-plugin-theme-ui';
+
+  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+  export interface Theme extends AppTheme {}
+}

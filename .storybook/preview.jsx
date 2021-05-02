@@ -1,9 +1,7 @@
 import React from 'react';
-import { ThemeProvider } from 'theme-ui';
+import { ThemeProvider } from '@emotion/react';
 
-import './storybook.css';
-import GlobalStyles from 'setup/GlobalStyles';
-import theme from '../src/gatsby-plugin-theme-ui/index';
+import theme from '../src/gatsby-plugin-theme-ui';
 import 'assets/styles/reset.css';
 import 'assets/fonts/fonts.css';
 
@@ -15,7 +13,6 @@ export const parameters = {
       order: ['Styles', 'Atoms', 'Molecules', 'Organisms'],
     },
   },
-  controls: { hideNoControlsWarning: true },
   backgrounds: {
     default: 'light',
     values: [
@@ -34,7 +31,6 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <ThemeProvider {...{ theme }}>
-      <GlobalStyles />
       <Story />
     </ThemeProvider>
   ),

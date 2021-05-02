@@ -1,4 +1,4 @@
-import theme from '../gatsby-plugin-theme-ui/index';
+import theme from '../gatsby-plugin-theme-ui';
 
 const [phone, tablet, desktop] = theme.breakpoints;
 

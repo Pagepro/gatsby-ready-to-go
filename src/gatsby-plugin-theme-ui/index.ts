@@ -1,9 +1,7 @@
 import 'assets/fonts/fonts.css';
 
-import inner from 'components/styles/Inner/theme';
-import header from 'components/organisms/Header/theme';
-
 import text from './text';
+import links from './links';
 
 const theme = {
   colors: {
@@ -32,8 +30,7 @@ const theme = {
     small: '0.75em',
   },
   text,
-  inner,
-  header,
+  links,
 };
 
 export default theme;

@@ -7,6 +7,8 @@ body {
 html {
   box-sizing: border-box;
   font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
 }
 
 *,
@@ -42,4 +44,12 @@ ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+svg {
+  color: currentColor;
 }

@@ -18,6 +18,6 @@
     "jsx": "preserve",
     "baseUrl": "src"
   },
-  "include": ["./**/*.ts", "./**/*.tsx"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "./@types/*.d.ts"],
   "exclude": ["node_modules"]
 }

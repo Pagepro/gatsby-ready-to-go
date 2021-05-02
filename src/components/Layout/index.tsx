@@ -2,8 +2,8 @@ import React, { Fragment } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import Header from 'components/organisms/Header';
-import GlobalStyles from 'setup/GlobalStyles';
 import { LayoutProps } from './types';
+import 'assets/styles/reset.css';
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -19,12 +19,12 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <Fragment>
-      <GlobalStyles />
       <Header
         title={data.site.siteMetadata?.title || `Title`}
         description={data.site.siteMetadata?.description || `Description`}
       />
       <main>{children}</main>
+      <footer />
     </Fragment>
   );
 };

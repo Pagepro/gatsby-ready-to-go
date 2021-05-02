@@ -7,17 +7,15 @@ module.exports = {
     author: `Pagepro`,
   },
   plugins: [
-    `gatsby-plugin-theme-ui`,
-    `gatsby-plugin-emotion`,
-    `gatsby-plugin-react-svg`,
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-typescript`,
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-theme-ui',
+    'gatsby-plugin-react-svg',
+    `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: 'gatsby-plugin-root-import',
       options: {
-        src: path.join(__dirname, 'src/src'),
+        src: path.join(__dirname, 'src'),
         components: path.join(__dirname, 'src/components'),
         pages: path.join(__dirname, 'src/pages'),
         assets: path.join(__dirname, 'src/assets'),

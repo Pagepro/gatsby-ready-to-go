@@ -1,9 +1,9 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Container } from 'theme-ui';
+import React from 'react';
+
+import { StyledInner } from './styles';
 
 const Inner: React.FC = ({ children }) => (
-  <Container variant="inner">{children}</Container>
+  <StyledInner variant="inner">{children}</StyledInner>
 );
 
 export default Inner;

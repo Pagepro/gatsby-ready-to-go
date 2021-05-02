@@ -1,12 +1,5 @@
 module.exports = {
   stories: ['../src/components/**/*.stories.@(ts|tsx)'],
-  addons: [
-    '@storybook/addon-links',
-    {
-      name: '@storybook/addon-essentials',
-      options: {
-        docs: false,
-      },
-    },
-  ],
+  managerEntries: ['@storybook/addon-links/register'],
+  addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
 };

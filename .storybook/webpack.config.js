@@ -1,6 +1,7 @@
 const path = require('path');
 
 const appSourceDir = path.join(__dirname, '..', 'src');
+const toPath = (_path) => path.join(process.cwd(), _path);
 
 module.exports = ({ config }) => {
   config.resolve.extensions.push('.ts', '.tsx', '.d.ts');
@@ -52,6 +53,13 @@ module.exports = ({ config }) => {
   });
 
   config.resolve.modules.push(path.resolve(__dirname, '../src'));
+
+  config.resolve.alias = {
+    ...(config.resolve.alias || {}),
+    // https://github.com/storybookjs/storybook/issues/10231#issuecomment-728038867
+    '@emotion/core': toPath('node_modules/@emotion/react'),
+    'emotion-theming': toPath('node_modules/@emotion/react'),
+  };
 
   return config;
 };

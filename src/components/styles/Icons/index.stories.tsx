@@ -1,6 +1,5 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Box, Text, Flex } from 'theme-ui';
+import React from 'react';
+import { Box, Text, Flex } from 'theme-ui';
 import { Meta } from '@storybook/react/types-6-0';
 
 import { baseIcons } from './consts';

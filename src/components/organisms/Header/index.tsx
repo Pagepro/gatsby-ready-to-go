@@ -1,19 +1,23 @@
-/** @jsxRuntime classic */
-/** @jsx jsx */
-import { jsx, Text, Box, Flex } from 'theme-ui';
+import React from 'react';
+import { Text, Box } from 'theme-ui';
 
 import { IconHello } from 'assets/svg';
 import Inner from 'components/styles/Inner';
 import { HeaderProps } from './types';
-import { StyledHeaderTitle } from './styles';
+import {
+  StyledHeader,
+  StyledHeaderContent,
+  StyledHeaderIcon,
+  StyledHeaderTitle,
+} from './styles';
 
 const Header: React.FC<HeaderProps> = ({ title, description }) => (
-  <Flex as="header" variant="header">
+  <StyledHeader as="header">
     <Inner>
-      <Flex variant="header.content">
-        <Flex variant="header.icon">
+      <StyledHeaderContent>
+        <StyledHeaderIcon variant="header.icon">
           <IconHello />
-        </Flex>
+        </StyledHeaderIcon>
         <Box>
           <StyledHeaderTitle as="h1" variant="heading1">
             {title}
@@ -24,9 +28,9 @@ const Header: React.FC<HeaderProps> = ({ title, description }) => (
             </Text>
           )}
         </Box>
-      </Flex>
+      </StyledHeaderContent>
     </Inner>
-  </Flex>
+  </StyledHeader>
 );
 
 export default Header;

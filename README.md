@@ -4,13 +4,17 @@ Everything you need to create an amazing Gatsby project.
 
 ## What's inside?
 
-- **Gatsby v2**
+- **Gatsby v3**
 - **Typescript**
 - **Theme UI and Emotion**
 - **Storybook**
 - **Plop.js** - a little tool to generate files based on template.
 - **gitlab-ci.yml file**
 - **Prettier and ESLint**
+
+**Requirements:** Minimal Node.js version 12.13.0.
+
+**Important:** This starter is based on Gatsby v3. You can find more information about the migration from v2 to v3 [here](https://www.gatsbyjs.com/docs/reference/release-notes/migrating-from-v2-to-v3).
 
 ## Getting started
 
